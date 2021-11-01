@@ -12,8 +12,8 @@ VAGRANT_CONTROLLER_TYPE = "virtio-scsi"
 # define disks
 # The format is filename, size (GB), port (see controller docs)
 local_disks = [
-  { :filename => "disk1", :size => 5, :port => 5 },
-  { :filename => "disk2", :size => 5, :port => 6 },
+ # { :filename => "disk1", :size => 5, :port => 5 },
+ # { :filename => "disk2", :size => 5, :port => 6 },
   { :filename => "disk3", :size => 10, :port => 25 }
 ]
 
@@ -26,7 +26,7 @@ MACHINES = {
               # VM CPU count
               :cpus => 2,
               # VM RAM size (Mb)
-              :memory => 1024,
+              :memory => 2048,
               # networks
               :net => [],
               # forwarded ports
