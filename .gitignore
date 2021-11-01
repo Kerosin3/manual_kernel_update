@@ -1,2 +1,4 @@
 .vagrant/
 disks/
+packer/builds/
+packer/*.box

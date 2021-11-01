@@ -34,7 +34,7 @@
           "modifyvm",
           "{{.Name}}",
           "--memory",
-          "2048"
+          "4096"
         ],
         [
           "modifyvm",
@@ -60,8 +60,9 @@
       "override": {
         "{{user `image_name`}}": {
           "scripts": [
-            "scripts/stage-1-kernel-update.sh",
-            "scripts/stage-2-clean.sh"
+            "scripts/stage1-installing-updates-and-packages.sh",
+            "scripts/stage2-download-and-install-kernel.sh",
+            "scripts/stage3-cleanup.sh"
           ]
         }
       },
