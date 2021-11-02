@@ -8,7 +8,7 @@ yum -y makecache
 yum -y install ncurses-devel make gcc bc flex bison openssl-devel gcc-c++ 
 yum -y install elfutils-libelf-devel 
 yum -y install rpm-build
-yum -y install libmpc-devel mpfr-devel gmp-devel 
+yum -y install libmpc-devel mpfr-devel gmp-devel rsync
 #----------------installing gcc 4.9.2-for sources---------------------
 #cd ~
 #curl ftp://ftp.mirrorservice.org/sites/sourceware.org/pub/gcc/releases/gcc-4.9.2/gcc-4.9.2.tar.bz2 -O

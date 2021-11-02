@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # clean all
-yum update -y
+#yum update -y
 yum clean all
 cd /usr/src/
 rm -f linux-5.14.15.tar.xz
