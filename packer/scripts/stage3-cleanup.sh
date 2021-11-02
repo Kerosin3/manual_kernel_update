@@ -3,7 +3,9 @@
 # clean all
 yum update -y
 yum clean all
-
+cd /usr/src/
+rm -f linux-5.14.15.tar.xz
+rm -Rf linux-5.14.15
 
 # Install vagrant default key
 mkdir -pm 700 /home/vagrant/.ssh

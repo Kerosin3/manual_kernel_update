@@ -44,5 +44,5 @@ make -j$(nproc) rpm-pkg
 rpm -iUv /root/rpmbuild/RPMS/x86_64/*.rpm
 grub2-mkconfig -o /boot/grub2/grub.cfg
 grub2-set-default 0
-syum clean all
+yum clean all
 shutdown -r now
