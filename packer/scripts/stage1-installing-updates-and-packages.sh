@@ -49,9 +49,10 @@ make prepare
 make -j$(nproc) rpm-pkg
 make headers_install
 #-----------------install rpm-------------------#
-rpm -iUv /root/rpmbuild/RPMS/x86_64/*.rpm
+rpm -ivh /root/rpmbuild/RPMS/x86_64/*.rpm
+#rpm -iUv /root/rpmbuild/RPMS/x86_64/*.rpm
 echo '----------------deleting BUILD folder for RPM package------------------------'
-rm -Rf /root/rpmbuild/BUILD
+rm -Rf /root/rpmbuild/BUILD/*
 grub2-mkconfig -o /boot/grub2/grub.cfg
 grub2-set-default 0
 yum clean all
